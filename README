@@ -1,1 +1,10 @@
-This is a Nike-running-tracking-system repo.
+Nike-running-tracking-system
+
+Running-Information-Analysis-Service
+	Features:
+		get REST Response according to healthLevel
+
+	Getting started:
+		run mysql docker: docker-compose up -d
+		installation: mvn clean install
+			      java -jar running-information-analysis-service-1.0.0.BUILD-SNAPSHOT.jar
