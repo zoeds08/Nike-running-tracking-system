@@ -1,5 +1,6 @@
 package demo.domain;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
@@ -14,6 +15,7 @@ public class UserInfo {
     private String username;
     private String address;
 
+    @JsonCreator
     public UserInfo(
             @JsonProperty("username") String username,
             @JsonProperty("address") String address){

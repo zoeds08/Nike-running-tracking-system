@@ -1,10 +1,20 @@
 Nike-running-tracking-system
 
 Running-Information-Analysis-Service
-	Features:
+	1. Features:
 		get REST Response according to healthLevel
 
-	Getting started:
-		run mysql docker: docker-compose up -d
-		installation: mvn clean install
-			      java -jar running-information-analysis-service-1.0.0.BUILD-SNAPSHOT.jar
+	2. Download code:
+		git clone https://github.com/zoeds08/Nike-running-tracking-system.git
+		cd Running-Information-Analysis-System
+
+	3. Start Database:
+		Start Mysql Docker: docker-compose up -d
+		sign in database: mysql --host=127.0.0.1 --port=3306 --user=root --password=root
+		retrieve the database: SHOW DATABASES;
+		create dabase: CREATE DATABASE;
+		exit database: \q
+
+	4. Start Spring Apllication:
+		mvn clean install
+		Start servcer: java -jar running-information-analysis-service-1.0.0.BUILD-SNAPSHOT.jar

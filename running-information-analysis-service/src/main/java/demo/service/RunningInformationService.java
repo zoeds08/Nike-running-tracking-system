@@ -19,5 +19,5 @@ public interface RunningInformationService {
 
     void deleteAll();
 
-    void delete(Long id);
+    void delete(String runningId);
 }

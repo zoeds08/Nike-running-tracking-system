@@ -13,10 +13,13 @@ import java.util.List;
 @Service
 public class RunningInformationServiceImpl implements RunningInformationService {
 
+    private final String DBG = "----->";
+
     private RunningInformationRepository runningInformationRepository;
 
     @Autowired
     public RunningInformationServiceImpl(RunningInformationRepository runningInformationRepository){
+        System.out.println(DBG + "Inside constructor of RunningInformationServiceImpl");
         this.runningInformationRepository = runningInformationRepository;
     }
 
@@ -27,6 +30,7 @@ public class RunningInformationServiceImpl implements RunningInformationService 
 
     @Override
     public Page<RunningInformation> findByHeartRate(int heartRate, Pageable pageable) {
+        System.out.println(DBG + "Inside findByHeartRate method with HR " + String.valueOf(heartRate));
         return runningInformationRepository.findByHeartRate(heartRate,pageable);
     }
 
@@ -46,7 +50,8 @@ public class RunningInformationServiceImpl implements RunningInformationService 
     }
 
     @Override
-    public void delete(Long id) {
-        runningInformationRepository.delete(id);
+    public void delete(String runningId) {
+        runningInformationRepository.delete(runningId);
     }
+
 }

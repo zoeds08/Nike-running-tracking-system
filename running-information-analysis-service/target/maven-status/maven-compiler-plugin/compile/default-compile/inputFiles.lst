@@ -1,7 +1,7 @@
-/home/vagrant/workspace/running-information-analysis-service/src/main/java/demo/RunningInformationAnalysisServiceApplication.java
-/home/vagrant/workspace/running-information-analysis-service/src/main/java/demo/domain/RunningInformationRepository.java
-/home/vagrant/workspace/running-information-analysis-service/src/main/java/demo/service/RunningInformationService.java
-/home/vagrant/workspace/running-information-analysis-service/src/main/java/demo/domain/UserInfo.java
-/home/vagrant/workspace/running-information-analysis-service/src/main/java/demo/rest/RunningInformationBulkUploadController.java
-/home/vagrant/workspace/running-information-analysis-service/src/main/java/demo/service/impl/RunningInformationServiceImpl.java
-/home/vagrant/workspace/running-information-analysis-service/src/main/java/demo/domain/RunningInformation.java
+/home/vagrant/workspace/Nike-running-tracking-system/running-information-analysis-service/src/main/java/demo/domain/RunningInformation.java
+/home/vagrant/workspace/Nike-running-tracking-system/running-information-analysis-service/src/main/java/demo/RunningInformationAnalysisServiceApplication.java
+/home/vagrant/workspace/Nike-running-tracking-system/running-information-analysis-service/src/main/java/demo/rest/RunningInformationBulkUploadController.java
+/home/vagrant/workspace/Nike-running-tracking-system/running-information-analysis-service/src/main/java/demo/domain/RunningInformationRepository.java
+/home/vagrant/workspace/Nike-running-tracking-system/running-information-analysis-service/src/main/java/demo/domain/UserInfo.java
+/home/vagrant/workspace/Nike-running-tracking-system/running-information-analysis-service/src/main/java/demo/service/RunningInformationService.java
+/home/vagrant/workspace/Nike-running-tracking-system/running-information-analysis-service/src/main/java/demo/service/impl/RunningInformationServiceImpl.java

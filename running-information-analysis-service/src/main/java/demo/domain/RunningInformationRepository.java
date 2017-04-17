@@ -20,4 +20,6 @@ public interface RunningInformationRepository extends JpaRepository<RunningInfor
     Page<RunningInformation> findAllRunningInformationOrderByHealthLevel(
             Pageable pageable
     );
+
+    void delete(String runningId);
 }

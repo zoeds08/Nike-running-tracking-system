@@ -19,6 +19,8 @@ public class RunningInformation {
         LOW, NORMAL, HIGH;
     }
 
+    private final String DBG = "----->";
+
     @Id
     @GeneratedValue
     private Long id;
@@ -41,16 +43,22 @@ public class RunningInformation {
     private int heartRate = 0;
     private HealthWarningLevel healthWarningLevel;
 
-    private Date timestamp;
+    private Date timestamp = new Date();
 
     public RunningInformation(){
         this.userInfo = null;
     }
 
     public RunningInformation(String username, String address){
+
+        System.out.println(DBG + "Inside constructor 1");
+        System.out.println(DBG + username);
+        System.out.println(DBG + address);
+
         this.userInfo = new UserInfo(username,address);
     }
 
+    //Deserialize json object and create Java object
     @JsonCreator
     public RunningInformation(
             @JsonProperty("runningId") String runningId,
@@ -87,7 +95,7 @@ public class RunningInformation {
             //option 3: Exception
             //option 4: Print warning
         }
-        System.out.println(this.heartRate);
+        System.out.println(DBG + this.heartRate);
     }
 
     public RunningInformation(UserInfo userInfo){
